@@ -2,34 +2,50 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>My Profile Page</title>
-    <meta name="description" content="Page description. No longer than 155 characters.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>My Profile Page</title>
+  <meta name="description" content="Page description. No longer than 155 characters.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="main.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="card" id="introduction">
-            <h1>Hello! I'm Leo</h1>
-            <h2>I'm a frontend developer😉</h2>
-            <img src="images/Photo.jpg" class="img-circle" width=100 alt="myself">
-            <p class="text-justify">I love music 🎵, traveling ✈ and the UK. I have been learning coding and I want to be a creative developer👩‍💻. I am very excited about my journey! I hope my dreams come true🍀</p>
-            <a href="https://www.youtube.com/watch?v=0dcbw4IEY5w" class="btn-black">Discover music</a>
-        </div>
-        <div class="card" id="banner">
-          <h2>Follow me!</h2>
-          <ul class="list-inline" id="navigation">
-            <li><a href="https://www.linkedin.com/in/leojdeveloper/"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://twitter.com/leojdeveloper"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/Leooogo"><i class="fab fa-github"></i></a></li>
-          </ul>
-        </div>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <a href="">a miracle</a>
     </div>
+
+    <ul class="navbar__menu">
+      <li><a href="">About</a></li>
+      <li><a href="https://leooogo.github.io/">Blog</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+
+    <ul class="navbar__icons">
+      <li><a href="https://www.linkedin.com/in/leojdeveloper/"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/leojdeveloper"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://github.com/Leooogo"><i class="fab fa-github"></i></a></li> 
+    </ul>
+
+    <a href="#" class="navbar__toggleBtn">
+      <i class="fas fa-bars"></i>
+    </a>
+  </nav>
+
+  <div class="container">
+    <div class="card" id="introduction">
+      <h1>Hello! I'm Leo</h1>
+      <h2>I'm a frontend developer 😉</h2>
+      <img src="images/IMG_5959.jpg" class="img-circle" width=100 alt="myself">
+      <p class="text-justify">I love music 🎵, traveling ✈ and the UK. I have been learning coding and I want to be a creative developer👩‍💻. I am very excited about my journey! I hope my dreams come true🍀</p>
+      <a href="https://www.youtube.com/watch?v=0dcbw4IEY5w" class="btn-black">Discover music</a>
+    </div>
+  </div>
 </body>
 
 </html>
