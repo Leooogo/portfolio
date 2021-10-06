@@ -2,33 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
-  /* size */
-  --base-space: 8px;
-  --size-button: 60px;
-  --size-border: 4px;
-  --size-thumbnail: 50px;
-  --font-size: 18px;
-  --text-color: #d1d9d9;
-  --background-color: #044389;
+  --text-color: #044389; 
+  --background-color: #d1d9d9;
   --accent-color: #5995ED;
-
-  /* annimation */
-  --animation-duration: 300ms;
 }
 
 body {
   margin: 0;
   font-family: 'Source Sans Pro';
   font-weight: 300;
-  background-color: var(--text-color);
-  color: var(--background-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-size: 15px;
   line-height: 1.6;
   text-align: center;
 }
 
 h1 {
-  color: var(--background-color);
+  color: var(--text-color);
   font-family: Roboto, serif;
   font-size: 30px;
   line-height: 1.3;
@@ -47,7 +38,7 @@ h2 {
 }
 
 a {
-  color: var(--text-color);
+  color: var(--background-color);
   font-weight: bold;
   text-decoration: none;
   font-size: 16px;
@@ -57,11 +48,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background-color);
+  background-color: var(--text-color);
   padding: 8px 12px;
 }
 
-.navbar__logo {
+.navbar__logo a {
   font-size: 24px;
   color: var(--accent-color);
 }
@@ -83,7 +74,7 @@ a {
 
 .navbar__icons {
   list-style:none;
-  color: var(--text-color);
+  color: var(--background-color);
   display: flex;
   padding-left: 0;
 }
@@ -127,9 +118,9 @@ a {
 }
 
 .btn-blue {
-  font-size: var(--font-size);
-  padding: calc(var(--base-space) * 2);
-  border-radius: var(--size-border);
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 4px;
 }
 
 .btn-blue:hover {
