@@ -52,7 +52,7 @@ a {
   padding: 8px 12px;
 }
 
-.navbar__logo a {
+.navbar__logo {
   font-size: 24px;
   color: var(--accent-color);
 }
