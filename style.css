@@ -7,6 +7,15 @@
   --accent-color: #5995ED;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 body {
   margin: 0;
   font-family: 'Source Sans Pro';
@@ -18,43 +27,27 @@ body {
   text-align: center;
 }
 
-h1 {
-  color: var(--text-color);
-  font-family: Roboto, serif;
-  font-size: 30px;
-  line-height: 1.3;
-  width: min-content;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
-
-h2 {
-  color: var(--accent-color);
-  font-family: Courier, monospace;
-  font-size: 15px;
-  line-height: 1.0;
-}
-
 a {
   color: var(--background-color);
-  font-weight: bold;
   text-decoration: none;
+
+  font-weight: bold;
   font-size: 16px;
 }
 
 .navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--text-color);
+  background-color: var(--accent-color);
   padding: 8px 12px;
 }
 
-.navbar__logo {
+.navbar__logo > a {
   font-size: 24px;
-  color: var(--accent-color);
+  color: var(--text-color);
 }
 
 .navbar__menu {
@@ -68,7 +61,7 @@ a {
 }
 
 .navbar__menu li:hover {
-  background-color: var(--accent-color);
+  background-color: var(--text-color);
   border-radius: 4px;
 }
 
@@ -88,18 +81,163 @@ a {
   position: absolute;
   right: 32px;
   font-size: 24px;
-  color: var(--accent-color);
+  color: var(--text-color);
 }
 
-.img-circle {
-  width: 130px;
-  height: 130px;
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.home > h1 {
+  color: var(--text-color);
+  font-size: 100px;
+  text-align: center;
+  line-height: 1.3;
+  margin: 0 auto -20px auto;
+}
+
+.home > h3 {
+  color: var(--accent-color);
+  font-family: Roboto, serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.0;
+  letter-spacing: 2px;
+}
+
+.about {
+  background-color: var(--text-color);
+  text-align: center;
+  padding: 100px 30px;
+  line-height: 1.5;
+}
+
+.about > img {
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  transition: transform var(--animation-duration) ease;
+  margin: 30px auto 50px auto;
 }
 
-.card {
+.about > p {
+  padding: 0 50px;
+  margin: 30px;
+  text-align: left;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--background-color);
+}
+
+.about > a {
+  margin-top: 100px;
+}
+
+.projects {
+  text-align: center;
+  padding: 100px 30px;
+  background-color: var(--background-color);
+}
+
+.projects-header {
+  max-width: 300px;
+  margin: 0 auto 100px auto;
+  border-bottom: 3px solid var(--text-color);
+  font-size: 68px;
+}
+
+.projects > h1 {
+  font-size: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 60px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.project-tile {
+  background-color: var(--text-color);
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  border-radius: 2px;
+}
+
+.project-image {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+img {
+  display: block;
+}
+
+.project-title {
+  font-size: 18px;
+}
+
+.btn-blue {
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: var(--accent-color); 
+  color: var(--background-color);
+  margin-top: 30px;
+}
+
+.btn-blue:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+#btnTop {
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  left: 88%;
+  max-width: 30px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+#btnTop > a {
+  font-size: 50px;
+}
+
+
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+
+
+
+/* .card {
   background: white;
   padding: 30px;
   border: 1px solid lightgrey;
@@ -116,21 +254,12 @@ a {
 .text-justify {
   text-align: justify;
 }
-
-.btn-blue {
-  font-size: 18px;
-  padding: 16px;
-  border-radius: 4px;
-}
-
-.btn-blue:hover {
-  background-color: var(--accent-color);
-  color: var(--text-color);
-}
     
 #introduction p {
   margin-bottom: 30px;
-}
+}  */
+
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */

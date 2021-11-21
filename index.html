@@ -15,21 +15,23 @@
 </head>
 
 <body>
-  <nav class="navbar">
+  <div id="top"></div>
+  <nav class="navbar fixed-top">
     <div class="navbar__logo">
-      <a href="">a miracle</a>
+      <a href="">Home</a>
     </div>
 
     <ul class="navbar__menu">
-      <li><a href="">About</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="https://leooogo.github.io/">Blog</a></li>
       <li><a href="mailto:leo.j.developer@gmail.com">Contact</a></li>
+      <li><a href="#projects">Projects</a></li>
     </ul>
 
     <ul class="navbar__icons">
       <li><a href="https://www.linkedin.com/in/leojdeveloper/"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://twitter.com/leojdeveloper"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="https://github.com/Leooogo"><i class="fab fa-github"></i></a></li> 
+      <li><a href="https://twitter.com/leojdeveloper"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://github.com/Leooogo"><i class="fab fa-github"></i></a></li> 
     </ul>
 
     <a href="#" class="navbar__toggleBtn">
@@ -37,18 +39,43 @@
     </a>
   </nav>
 
-  <div class="container">
-    <div class="card" id="introduction">
-      <h1>Hello! I'm Leo</h1>
-      <h2>I'm a frontend developer 😉</h2>
-      <img src="images/IMG_5959.jpg" class="img-circle" width=100 alt="myself">
-      <p class="text-justify">I was born and raised in a small town called Yecheon-gun, South Korea. I currently work at Starbucks as a barista. Before I came here, I had done various things and explored myself. One of my experiences is working in the management support department at a small IT company for almost two years.</p>
-      <p class="text-justify">I have come to the UK in August 2019, and one of my dreams has come true in London, which is my current job. Sadly, COVID-19 hit the world, but interestingly I have realized there is something else I am eager for. I found It was time to say “Hello, world.”</p>
-      <p class="text-justify">I love music 🎵, traveling ✈ and the UK. I have been learning coding and I want to be a creative frontend developer👩‍💻 in a short time. I am very excited about my journey! I hope my dreams come true🍀</p>
-      <a href="https://www.youtube.com/watch?v=0dcbw4IEY5w" class="btn-blue">Discover music</a>
+  <section class="home" id="home">
+      <h1>Hello! I am Leo</h1>
+      <h3>a committed Frontend developer 😉</h3>
+  </section>
+
+  <section class="about" id="about">
+    <img src="images/IMG_5959.jpg" class="img-circle" width=100 alt="myself">
+    <p class="text-justify">I was born and raised in a small town called Yecheon-gun, South Korea. I currently work at Starbucks as a barista. Before I came here, I had done various things and explored myself. One of my experiences is working in the management support department at a small IT company for almost two years.</p>
+    <p class="text-justify">I have come to the UK in August 2019, and one of my dreams has come true in London, which is my current job. Sadly, COVID-19 hit the world, but interestingly I have realized there is something else I am eager for. I found It was time to say “Hello, world.”</p>
+    <p class="text-justify">I love music 🎵, traveling ✈ and the UK. I have been learning coding and I want to be a creative frontend developer👩‍💻 in a short time. I am very excited about my journey! I hope my dreams come true🍀</p>
+    <a href="https://www.youtube.com/watch?v=0dcbw4IEY5w" class="btn-blue">Discover music I love</a>
+  </section>
+
+  <section class="projects" id="projects">
+    <h1 class="projects-header">Projects</h1>
+    <div class="projects-grid">
+      <a href="http://www.spacer.life" class="project-tile">
+        <img src="images/spacer.png" alt="" class="project-image">
+        <p class="project-title">Spacer</p>
+      </a>
+      <a href="https://getsetgo-spacer.herokuapp.com/" class="project-tile">
+        <img src="images/getsetgo.png" alt="" class="project-image">
+        <p class="project-title">Getsetgo</p>
+      </a>
+      <a href="https://getsetgo-spacer.herokuapp.com/" class="project-tile">
+        <img src="images/getsetgo.png" alt="" class="project-image">
+        <p class="project-title">Youtube clone coding</p>
+      </a>
     </div>
-  </div>
-</div>
+  </section>
+
+  <!-- <a href="" class="scroll" onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })"><i class="fas fa-chevron-circle-up"></i></a> -->
+  <button id="btnTop" class="btnTop"> 
+    <a href="#top" style="color: #5995ed">
+      <i class="fas fa-chevron-circle-up"></i>
+    </a>
+  </button>
 </body>
 
 </html>
