@@ -1,32 +1,29 @@
-const toggleBtn = document.querySelector('.navbar__toggleBtn');
-const menu = document.querySelector('.navbar__menu');
-const icons = document.querySelector('.navbar__icons');
+// const toggleBtn = document.querySelector('.navbar__toggleBtn');
+// const menu = document.querySelector('.navbar__menu');
+// const icons = document.querySelector('.navbar__icons');
 
-toggleBtn.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  icons.classList.toggle('active');
-});
+// window.onscroll = function() {
+//   var pageOffset = document.documentElement.scrollTop || document.body.scrollTop,
+//         btn = document.getElementById('btnTop');
+//     if (btn) btn.style.visibility = pageOffset > 450 ? 'visible' : 'hidden';
+// };
 
-// const btnOnScroll = document.querySelector('.btn');
+// toggleBtn.addEventListener('click', () => {
+//   menu.classList.toggle('active');
+//   icons.classList.toggle('active');
+// });
 
-// const initUpdateBtnOnScroll = () => {
-//   const btn = document.querySelector('.btnTop');
-//   if(btn) {
-//     window.addEventListener('scroll', () => {
-//       if(window.scrollY >= window.innerHeight) {
-//         btn.classList.add('scroll');
-//       } else {
-//         btn.classList.remove('scroll');
-//       }
-//     });
+// const showBtn = () => document.querySelector('.btnTop').classList.add('visible');
+// const hideBtn = () => document.querySelector('.btnTop').classList.remove('visible');
+// document.addEventListener('scroll', (e) => window.scrollY < 100 ? hideBtn() : showBtn());
+
+// const myNav = document.getElementById('navbar')
+// window.onscroll = function() {
+//   if(document.body.scrollTop >= 200) {
+//     myNav.classList.add("nav-colored");
+//     myNav.classList.remove("nav-transparent");
+//   } else {
+//     myNav.classList.add("nav-transparent");
+//     myNav.classList.remove("nav-colored");
 //   }
 // }
-
-// function scroll() {
-//   const toTop = document.getElementById('btnTop');
-//   window.scrollY > 0 ? toTop.style.display = 'Block' : toTop.style.display = 'none';
-// }
-
-const showBtn = () => document.querySelector('.btnTop').classList.add('visible');
-const hideBtn = () => document.querySelector('.btnTop').classList.remove('visible');
-document.addEventListener('scroll', (e) => window.scrollY < 100 ? hideBtn() : showBtn());

@@ -35,7 +35,17 @@ a {
   font-size: 16px;
 }
 
-.navbar {
+.nav-transparent {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 8px 12px;
+}
+
+.nav-colored {
   position: fixed;
   width: 100%;
   display: flex;
@@ -205,7 +215,7 @@ img {
   background-color: var(--accent-color);
   color: var(--text-color);
 }
-
+/* 
 #btnTop {
   position: fixed;
   bottom: 10px;
@@ -219,47 +229,7 @@ img {
 
 #btnTop > a {
   font-size: 50px;
-}
-
-
-
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, .5);
-  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-}
-
-
-
-
-/* .card {
-  background: white;
-  padding: 30px;
-  border: 1px solid lightgrey;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-  border-radius: 4px;
-  margin: 20px 0px;
-}
-
-.container {
-  width: 600px;   
-  margin: 30px auto;
-}
-
-.text-justify {
-  text-align: justify;
-}
-    
-#introduction p {
-  margin-bottom: 30px;
-}  */
-
-
+} */
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
@@ -284,7 +254,7 @@ img {
   .navbar {
     flex-direction: column;
     align-items:flex-start;
-    padding: 8px 24px;
+    /* padding: 8px 24px; */
   }
 
   .navbar__menu {
